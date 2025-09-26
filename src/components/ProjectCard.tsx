@@ -13,7 +13,7 @@ export function ProjectCard ( props: { project: Project}) {
                     "
                 style={{ width: `${cardWidth()}px` , "min-width": `${cardWidth()}px`}}
                     >
-            <img src={props.project.coverImage} class="absolute w-[102%] h-[102%] -z-10 object-cover group-hover:scale-105 transition-scale duration-500"/>
+            <img src={`/projects/${props.project.coverImage}.png`} class="absolute w-[102%] h-[102%] -z-10 object-cover group-hover:scale-105 transition-scale duration-500"/>
 
             <span class="absolute top-6 left-6 md:top-8 md:left-8 font-[DS-Digital] text-5xl text-white">
                 {props.project.year}

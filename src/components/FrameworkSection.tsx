@@ -5,11 +5,11 @@ export function FrameworkSection () {
         <span class="text-black/90" >We Work Globaly –– </span>
         <span>with market’s favorites tools and frameworks</span>
         <span class="flex -space-x-4 inline-block">&nbsp
-          {<Frameworks Framework={"/public/images/Figma.svg"}/>}
-          {<Frameworks Framework={"/public/images/React.svg"}/>}
-          {<Frameworks Framework={"/public/images/Framer.svg"}/>}
-          {<Frameworks Framework={"/public/images/Solidjs.png"}/>}
-          {<Frameworks Framework={"/public/images/Nextjs.svg"}/>}&nbsp
+          {<Frameworks Framework={"Figma"}/>}
+          {<Frameworks Framework={"React"}/>}
+          {<Frameworks Framework={"Framer"}/>}
+          {<Frameworks Framework={"Solidjs"}/>}
+          {<Frameworks Framework={"Nextjs"}/>}&nbsp
         </span>
         <span>to provide the best in class experience.</span>
     </div>
@@ -23,7 +23,7 @@ export function Frameworks (props: { Framework : string}){
                   md:w-[80px] md:h-[80px]
                   w-[48px] h-[48px]
                   backdrop-blur-md bg-black/5 border border-black/10" >
-      <img src={props.Framework} class="w-full h-full bg-size-[100%] object-cover bg-center bg-no-repeat" />
+      <img src={`/frameworks/${props.Framework}.svg`} class="w-full h-full bg-size-[100%] object-cover bg-center bg-no-repeat" />
     </span>
   )
 }
