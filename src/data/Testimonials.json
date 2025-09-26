@@ -1,0 +1,49 @@
+{
+    "testimonials" : [
+        {
+            "id" : 1 ,
+            "avatar" : "/public/team/alison.png",
+            "company" : "/public/company-logos/Founders-Lair.svg",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna",
+            "name" : "Jelte Wingender",
+            "position" : "CEO & Co-Founder",
+            "country" : "Germany"
+        },
+        {
+            "id" : 2 ,
+            "avatar" : "/public/team/alison.png",
+            "company" : "/public/company-logos/Elite-xp.svg",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna",
+            "name" : "Justin",
+            "position" : "CEO & Co-Founder",
+            "country" : "Canada"
+        },
+        {
+            "id" : 3 ,
+            "avatar" : "/public/team/alison.png",
+            "company" : "/public/company-logos/Elite-xp.svg",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna",
+            "name" : "Justin",
+            "position" : "CEO & Co-Founder",
+            "country" : "Canada"
+        },
+        {
+            "id" : 4 ,
+            "avatar" : "/public/team/alison.png",
+            "company" : "/public/company-logos/Elite-xp.svg",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna",
+            "name" : "Justin",
+            "position" : "CEO & Co-Founder",
+            "country" : "Canada"
+        },
+        {
+            "id" : 5 ,
+            "avatar" : "/public/team/alison.png",
+            "company" : "/public/company-logos/Elite-xp.svg",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna",
+            "name" : "Justin",
+            "position" : "CEO & Co-Founder",
+            "country" : "Canada"
+        }
+    ]
+}

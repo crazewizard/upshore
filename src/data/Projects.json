@@ -1,0 +1,37 @@
+{
+    "projects": [
+        {
+            "id" : 1,
+            "title" : "Trinket",
+            "coverImage" : "/public/projects/Trinket.png",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
+            "projectUrl" : "string",
+            "year": 2025
+        },
+        {
+            "id" : 2,
+            "title" : "Founders Lair",
+            "coverImage" : "/public/projects/FoundersLair.png",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
+            "projectUrl" : "string",
+            "year": 2022
+        },
+        {
+            "id" : 3,
+            "title" : "Elite XP",
+            "coverImage" : "/public/projects/EliteXP.png",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
+            "projectUrl" : "string",
+            "year": 2023
+        },
+        {
+            "id" : 4,
+            "title" : "XPF",
+            "coverImage" : "/public/projects/XPF.png",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
+            "projectUrl" : "string",
+            "year": 2024
+        }
+        
+    ]
+}

@@ -1,0 +1,34 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+
+# Build output
+/.output/
+/dist/
+/build/
+/.vinxi/
+/.solid/
+
+# Env
+.env
+.env.*
+
+# Cache
+.cache/
+/.turbo/
+/.parcel-cache/
