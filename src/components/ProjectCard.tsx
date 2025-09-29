@@ -3,18 +3,11 @@ import { createSignal, onMount, onCleanup } from "solid-js";
 
 export const [cardWidth, setCardWidth] = createSignal (600);
 
-onMount(() => {
-    const updateWidth = () => {
-        setCardWidth (window.innerWidth < 640 ? 360 : 600);
-    }
-    updateWidth();
-    window.addEventListener("resize", updateWidth);
-    onCleanup(()=> window.removeEventListener("resize", updateWidth));
-});
+onMount(() => setCardWidth (window.innerWidth < 640 ? 360 : 600));
 
 export function ProjectCard ( props: { project: Project}) {
     return (
-        <div    class="group flex relative backdrop-blur-sm border-2 border-black/30 hover:border-black/50
+        <div    class="group flex relative backdrop-blur-sm border-2 border-black/20 hover:border-black/50
                     h-[500px] md:h-[640px]
                     rounded-4xl  overflow-hidden  items-baseline-last
                     "

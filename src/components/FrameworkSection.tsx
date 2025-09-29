@@ -1,17 +1,17 @@
 
 export function FrameworkSection () {
   return (
-    <div class="relative  w-full no-line-height font-medium text-black/10 lg:!text-[110px] md:!text-[90px] !text-[68px] py-8 md:py-12 -z-10 mb-0 md:mb-36">
-        <span lang="en" class="text-black/90 hyphens-aut break-words" >We Work Globaly –– </span>
-        with market’s favorites tools and frameworks 
-        <span class="flex -space-x-4 inline-block">
+    <div class="relative w-full no-line-height font-medium text-black/10 lg:!text-[110px] md:!text-[90px] !text-[68px] py-8 md:py-12 -z-10 mb-0 md:mb-36">
+        <span class="text-black/90" >We Work Globaly –– </span>
+        <span>with market’s favorites tools and frameworks</span>
+        <span class="flex -space-x-4 inline-block">&nbsp
           {<Frameworks Framework={"/public/images/Figma.svg"}/>}
           {<Frameworks Framework={"/public/images/React.svg"}/>}
           {<Frameworks Framework={"/public/images/Framer.svg"}/>}
           {<Frameworks Framework={"/public/images/Solidjs.png"}/>}
           {<Frameworks Framework={"/public/images/Nextjs.svg"}/>}&nbsp
         </span>
-        to provide the best in class experience.
+        <span>to provide the best in class experience.</span>
     </div>
   )
 }
