@@ -36,7 +36,6 @@
     --white-90: hsla(0, 0%, 100%, 0.9);
     --white-100: hsla(0, 0%, 100%, 1);
 
-
   }
 }
 
@@ -94,7 +93,7 @@ p {
   animation: bg-flash 3s linear infinite;
   transition: background-color 0.5s linear;
 }
-
+/* Pause animation on hover */
 .pulseparent:hover .red-pulse {
   animation: none;
   background-color: #F24347;
@@ -117,13 +116,24 @@ p {
 }
 
 @keyframes apear {
-  0% {
-    opacity : 0%;
-  }
-  100% {
-    opacity : 100%;
-  }
+  0% { opacity : 0%; }
+  100% { opacity : 100%; }
 }
 
+.fade-down {
+  animation: fade-down 0.25s linear;
+}
 
-/* Pause animation on hover */
+@keyframes fade-down {
+  0% {opacity : 0% ; transform : translateY(-10px)}
+  100% {opacity : 100% ; transform : translateY(0px)}
+}
+
+.fade-up {
+  animation: fade-up 0.25s linear;
+}
+
+@keyframes fade-up {
+  0% {opacity : 0% ; transform : translateY(10px)}
+  100% {opacity : 100% ; transform : translateY(0px)}
+}

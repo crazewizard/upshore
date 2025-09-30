@@ -1,34 +1,47 @@
 import { UpshoreButton } from "~/primitives/UpshoreButton";
-import { Signal, createSignal } from "solid-js";
-import { MenuLink, Work , Studio } from "~/types/MenuLink";
+import { Signal, createSignal, onCleanup, onMount } from "solid-js";
+import { MenuLink, Work, Studio } from "~/types/MenuLink";
 
-const MenuItem = (props: {Link : MenuLink}) => {
-        const style = "flex  w-full p-2 space-x-2 rounded-[20px] border border-white/10 transition-colors duration-250 ease-linear hover:bg-white/10";
-        return(
-            <div class={`${style}`}>
-                <img src="/Upshore-logo.svg" alt="Upshore-logo" />
-                <div class="w-full overflow-hidden place-content-around">
-                    <h5 class="text-[20px] !text-white">{props.Link.Label}</h5>
-                    <p class="w-full uppercase !text-[12px] text-white/60 overflow-hidden whitespace-nowrap text-ellipsis">
-                        {props.Link.Description}
-                    </p>
-                </div>
-                <UpshoreButton icon="ArrowForward" action="" />
-            </div>
-        )
-    }
+export const [showMenu, setShowMenu] = createSignal(false);
 
-export function Menu () {
-    const menuStyle = "absolute top-0 pt-[96px] p-4 left-1/2 -translate-x-1/2 z-10 w-full md:w-auto";
+export function Menu() {
+    const menuStyle = "absolute top-[80px] p-4 left-1/2 -translate-x-1/2 z-10 w-full md:w-auto fade-down";
+    
+    onMount (() => {
+            const handleOutside = (e: MouseEvent | TouchEvent ) => {
+                const menu = document.getElementById("menu");
+                const target = e.target as Node | null;
+                
+                if (menu && target && !menu.contains(target)) {
+                    setShowMenu(false);
+                }
+            }
 
+            const handleScroll = () => {
+                //console.log("Scroll position:" , window.scrollY);
+                setShowMenu(false);
+            }
+
+            document.addEventListener("mousedown", handleOutside);
+            document.addEventListener("touchstart", handleOutside);
+            document.addEventListener("scroll", handleScroll);
+
+            onCleanup(() => {
+                document.removeEventListener("mousedown", handleOutside);
+                document.removeEventListener("touchstart", handleOutside);
+                document.removeEventListener("scroll", handleScroll);
+            })
+        })
+    
     return (
-        <div    onMouseEnter={()=>setShowMenu(true)}
-                onMouseLeave={()=>setShowMenu(false)}
-                class={`${menuStyle}
-                        ${showMenu()? "block" : "hidden" }
+        <div onMouseLeave={() => setShowMenu(false)}
+            id="menu"
+            class={`${menuStyle}
+                    ${showMenu() ? "block" : "hidden"}
                 `}>
-            <div class="group flex flex-col gap-4 bg-black/90 backdrop-blur-sm items-center
-                        w-full md:w-[500px] h-auto rounded-4xl p-4 border border-white/10 fade-in">
+            {showMenu() && (
+                <div class="group flex flex-col gap-4 bg-black/90 backdrop-blur-sm items-center
+                        w-full md:w-[500px] h-auto rounded-4xl p-4 border border-white/10">
                 <MenuItem Link={Work} />
                 <MenuItem Link={Studio} />
                 <div class="flex gap-2">
@@ -42,8 +55,25 @@ export function Menu () {
                     </a>
                 </div>
             </div>
+            )}
+        </div>
+    ); 
+}
+
+
+
+const MenuItem = (props: { Link: MenuLink }) => {
+    const style = "flex  w-full p-2 space-x-2 rounded-[20px] border border-white/10 transition-colors duration-250 ease-linear hover:bg-white/10";
+    return (
+        <div class={`${style}`}>
+            <img src="/Upshore-logo.svg" alt="Upshore-logo" />
+            <div class="w-full overflow-hidden place-content-around">
+                <h5 class="text-[20px] !text-white">{props.Link.Label}</h5>
+                <p class="w-full uppercase !text-[12px] text-white/60 overflow-hidden whitespace-nowrap text-ellipsis">
+                    {props.Link.Description}
+                </p>
+            </div>
+            <UpshoreButton icon="ArrowForward" action="" style=""/>
         </div>
     )
 }
-
-export const [showMenu, setShowMenu] = createSignal(false);

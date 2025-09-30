@@ -1,7 +1,7 @@
 import { Project } from "../types/Project";
 import { createSignal, onMount, onCleanup } from "solid-js";
 
-export const [cardWidth, setCardWidth] = createSignal (600);
+export const [cardWidth, setCardWidth] = createSignal (360);
 
 onMount(() => setCardWidth (window.innerWidth < 640 ? 360 : 600));
 

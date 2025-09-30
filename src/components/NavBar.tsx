@@ -12,9 +12,13 @@ export function NavBar () {
                     <p class="w-full uppercase !text-[12px] text-gray-300 overflow-hidden whitespace-nowrap text-ellipsis">WE DESIGN AND BUILD DIGITAL PRODUCTS –– EXPERIENCES THAT WIN HEARTS</p>
                 </div>
 
-                <UpshoreButton icon="Language-icon" action=""/>
-                <UpshoreButton icon="Menu-icon" action={()=>setShowMenu(true)}/>
+                <UpshoreButton icon="Language-icon" action="" style={buttonStyle}/>
+                <UpshoreButton icon="Menu-icon" action={()=> setShowMenu(!showMenu())} style={buttonStyle}/>
             </div>
         </div>
     )
 }
+
+const buttonStyle = `   group relative min-w-[48px] h-[48px] rounded-xl overflow-hidden 
+                        border border-transparent transition-colors transition-border duration-250 ease-linear 
+                        hover:bg-black/10 hover:border-black/10 active:bg-[#F24347] cursor-pointer  z-50`;
