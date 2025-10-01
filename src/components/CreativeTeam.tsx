@@ -16,7 +16,7 @@ export function CreativeTeam(){
            
             <span class="text-black/90 hyphens-aut break-words">
                 <span class="text-black/10">A Creative</span>Team 
-                <span class="flex -space-x-4 inline-block ">
+                <span class="flex -space-x-4">
                     <Avatar Person={Leonardo} Style={"w-[110px] h-[110px] bg-[#F24347]"} />
                     <Avatar Person={Alison} Style={"w-[110px] h-[110px] bg-[#256AF4]"} />
                 </span>

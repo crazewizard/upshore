@@ -1,40 +1,38 @@
 import { Signal, createSignal, For } from "solid-js";
-import { servicePackage } from "~/types/servicePackages";
+import { PackageOption} from "~/types/PackageOption";
 import { UpshoreButton } from "./UpshoreButton";
 
-export const [selected, setSelected] = createSignal("Design + Build");
+// Dynamic Data
+const packageOptions= [ { name : "Design + Build"} , 
+                        { name : "Design Only"}, 
+                        { name : "Dev Only"} ];  
+
+// Creating the signal
+export const [packageOption, setPackageOption] = createSignal(packageOptions[0].name);
 
 export default function PillSelector () {
-
+    // Pill Style
     const selectorStyle ="flex border border-white/10 rounded-2xl overflow-hidden";
-
-    const servicePackages = [
-        "Design + Build",
-        "Design Only",
-        "Dev Only"
-    ];
-
-    const Pill = (props : { option : string} ) => {
-        const pillStyle = `text-white/60 active:text-white text-[16px] p-2 px-4 cursor-pointer ${selected() === props.option ? "bg-[#256AF4]" : "bg-transparent"}`;
+    
+    // Creating the Pill
+    const Pill = (props : { option : PackageOption } ) => {
+        const pillStyle = " text-[16px] p-2 px-4 cursor-pointer";
         return (
-            <label class={pillStyle} for={props.option}>
-                <input  type="radio"
-                    class="hidden"
-                    id={props.option} 
-                    value={props.option} 
-                    name="Packages" 
-                    checked={selected() === props.option}
-                    onInput={() => setSelected(props.option)}
-                    />
-                <span>{props.option}</span>
-            </label>
+            <button class={pillStyle}
+                    onClick={() => setPackageOption(props.option.name)}
+                    classList={{
+                        "bg-[#256AF4] text-white" : packageOption() === props.option.name,
+                        "bg-transparent text-white/60" : packageOption() !== props.option.name
+                    }}>
+                {props.option.name}
+            </button>
         )
     }
-
+    //Returning the chain of pills
     return(
         <div class={selectorStyle}>
-            <For each={servicePackages}>
-                {(pack) => <Pill option={pack} />}
+            <For each={packageOptions}>
+                {(option) => <Pill option={option} />}
             </For>
         </div>
     )
