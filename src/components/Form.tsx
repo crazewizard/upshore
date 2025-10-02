@@ -1,4 +1,5 @@
 import { Input } from "~/primitives/Input";
+import { Radio } from "~/primitives/Radio";
 import { TextArea } from "~/primitives/textArea";
 
 export function Form () {
@@ -7,6 +8,12 @@ export function Form () {
 
     return (
         <div class={formStyle}>
+            <div class="flex gap-4 mt-4">
+                <Radio name="Product type" value="Mobile App" checked/>
+                <Radio name="Product type" value="SAAS" />
+                <Radio name="Product type" value="Landing Page" />
+            </div>
+
             <div class="flex w-full gap-4">
                 <Input type="text" id="name" placeholder="Full Name" label="Your Full Name"/>
                 <Input type="email" id="email" placeholder="youraddress@email.com" label="Your Email Address"/>
