@@ -8,27 +8,12 @@ export function Menu() {
     const menuStyle = "absolute top-[80px] p-4 left-1/2 -translate-x-1/2 z-10 w-full md:w-auto fade-down";
     
     onMount (() => {
-            const handleOutside = (e: MouseEvent | TouchEvent ) => {
-                const menu = document.getElementById("menu");
-                const target = e.target as Node | null;
-                
-                if (menu && target && !menu.contains(target)) {
-                    setShowMenu(false);
-                }
-            }
-
             const handleScroll = () => {
-                //console.log("Scroll position:" , window.scrollY);
                 setShowMenu(false);
             }
-
-            document.addEventListener("mousedown", handleOutside);
-            document.addEventListener("touchstart", handleOutside);
             document.addEventListener("scroll", handleScroll);
 
             onCleanup(() => {
-                document.removeEventListener("mousedown", handleOutside);
-                document.removeEventListener("touchstart", handleOutside);
                 document.removeEventListener("scroll", handleScroll);
             })
         })
@@ -36,9 +21,7 @@ export function Menu() {
     return (
         <div onMouseLeave={() => setShowMenu(false)}
             id="menu"
-            class={`${menuStyle}
-                    ${showMenu() ? "block" : "hidden"}
-                `}>
+            class={menuStyle}>
             {showMenu() && (
                 <div class="group flex flex-col gap-4 bg-black/90 backdrop-blur-sm items-center
                         w-full md:w-[500px] h-auto rounded-4xl p-4 border border-white/10">
@@ -77,3 +60,29 @@ const MenuItem = (props: { Link: MenuLink }) => {
         </div>
     )
 }
+
+/*
+onMount (() => {
+            const handleOutside = (e: MouseEvent | TouchEvent ) => {
+                const menu = document.getElementById("menu");
+                const target = e.target as Node | null;
+    
+                if (menu && target && !menu.contains(target)) {
+                    setShowMenu(false);
+                }
+            }
+            const handleScroll = () => {
+                setShowMenu(false);
+            }
+            document.addEventListener("mousedown", handleOutside);
+            document.addEventListener("touchstart", handleOutside);
+            document.addEventListener("scroll", handleScroll);
+
+            onCleanup(() => {
+                document.removeEventListener("mousedown", handleOutside);
+                document.removeEventListener("touchstart", handleOutside);
+                document.removeEventListener("scroll", handleScroll);
+            })
+        })
+    
+*/
