@@ -1,7 +1,5 @@
 import { For } from "solid-js";
 import { PageHeader } from "~/components/PageHeader";
-import { Bars } from "~/primitives/Bars";
-
 
 export default function Studio () {
     const parentStyle = "flex flex-col w-full max-w-[3000px] justify-center mt-32 mx-auto";

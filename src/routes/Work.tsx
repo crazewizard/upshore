@@ -2,7 +2,6 @@ import { For } from "solid-js";
 import { ProjectCard } from "~/components/ProjectCard";
 import rawProjectData from "~/data/Projects.json";
 import { Project } from "~/types/Project";
-import { Bars } from "~/primitives/Bars";
 import { PageHeader } from "~/components/PageHeader";
 
 const projectData : {projects:Project[]} = rawProjectData;

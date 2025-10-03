@@ -51,7 +51,7 @@ const MenuItem = (props: { Link: MenuLink }) => {
     const style = "flex  w-full p-2 space-x-2 rounded-[20px] border border-white/10 transition-colors duration-250 ease-linear hover:bg-[#256AF4]";
     return (
         <A href={`/${props.Link.link}`} class={`${style}`}>
-                <img src="/Upshore-logo.svg" alt="Upshore-logo" />
+                <img src={`/icons/${props.Link.title}.svg`} />
                 <div class="w-full overflow-hidden place-content-around">
                     <h5 class="text-[20px] !text-white">{props.Link.title}</h5>
                     <p class="w-full uppercase !text-[12px] text-white/30 overflow-hidden whitespace-nowrap text-ellipsis">
