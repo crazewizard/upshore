@@ -50,7 +50,8 @@ body {
   font-family: 'Inter', sans-serif;
   letter-spacing: -3%;
   background: hsla(0, 0%, 97%, 0.9);
-  color: rgb(var(--foreground-main));   
+  color: rgb(var(--foreground-main));  
+   
 }
 
 h1 {

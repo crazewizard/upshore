@@ -5,13 +5,13 @@ export const [cardWidth, setCardWidth] = createSignal (360);
 
 onMount(() => setCardWidth (window.innerWidth < 640 ? 360 : 600));
 
-export function ProjectCard ( props: { project: Project}) {
+export function ProjectCard ( props: { project: Project, size?:any, class?:string}) {
     return (
-        <div    class="group flex relative backdrop-blur-sm border-2 border-black/20 hover:border-black/50
+        <div    class={`group flex relative backdrop-blur-sm border-2 border-black/20 hover:border-black/50
                     h-[500px] md:h-[640px]
-                    rounded-4xl  overflow-hidden  items-baseline-last
-                    "
-                style={{ width: `${cardWidth()}px` , "min-width": `${cardWidth()}px`}}
+                    rounded-4xl  overflow-hidden  items-baseline-last ${props.class}`}
+                    
+                style={props.size}
                     >
             <img src={`/projects/${props.project.coverImage}.png`} class="absolute w-[102%] h-[102%] -z-10 object-cover group-hover:scale-105 transition-scale duration-500"/>
 
@@ -19,9 +19,10 @@ export function ProjectCard ( props: { project: Project}) {
                 {props.project.year}
             </span>
 
-            <div class="absolute top-6 right-6 md:top-8 md:right-8 text-5xl border border-white p-3 md:p-4 rounded-full opacity-30 hover:opacity-100 transition-opacity duration-500">
+            <div class="absolute top-6 right-6 text-5xl border border-white p-3 rounded-full opacity-30 hover:opacity-100 transition-opacity duration-500">
                 <img src="/icons/ArrowUPForward.svg" />
             </div>
+            
             <div class="p-4 md:p-6 w-full" >
                 <div class="p-4 md:p-6 flex flex-col gap-2
                             bg-black/60 

@@ -7,7 +7,7 @@ import { Bars } from "~/primitives/Bars";
 export function Footer () {
     return (
         <main class="max-w-[1600px] mx-auto w-[100vw] p-4 flex flex-col gap-4 place-items-center">
-            < Bars Style={"h-[40vh] md:h-[50vh]"}/>
+            <Bars Style={"h-[40vh] md:h-[50vh]  sticky top-0"}/>
           
             <div class="w-full flex flex-col gap-2 bg-gradient-to-b from-[#F7F7F700] to-[#F7F7F7] to-70% z-20" >
                 <div class="w-full flex flex-col gap-4 z-20 md:flex-row">

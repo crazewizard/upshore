@@ -61,7 +61,7 @@ export function ProjectCarousel () {
                         onMouseLeave={startSlide}
                         style = {{ width: `${carouselWidth}px` }}>
                     <For each={[...projectData.projects, ...projectData.projects]}>
-                        {(project) => <ProjectCard project={project}/>}
+                        {(project) => <ProjectCard project={project} size={{"max-width" : `${cardWidth()}px` , "min-width": `${cardWidth()}px`}} />}
                     </For>
                 </div>
             </div>   
