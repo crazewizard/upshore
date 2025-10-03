@@ -6,7 +6,7 @@ const buttonStyle = "min-w-[48px] h-[48px] rounded-xl overflow-hidden red-pulse 
 
 export function ContactCTA() {
     return (
-        <div class="fixed flex bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 w-full md:w-[600px] z-50 px-4 md:px-0 justify-center">
+        <div class="fixed flex bottom-4 lg:bottom-6 left-1/2 -translate-x-1/2 w-full md:w-[600px] z-80 px-4 md:px-0 justify-center">
             {showForm() && <ContactForm />}
             <div onclick={()=>setShowForm(!showForm())}
                 class="pulseparent group cursor-pointer w-full md:w-[300px]">

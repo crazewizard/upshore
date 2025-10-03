@@ -3,7 +3,7 @@ export function Radio (props: {name:string, value:string, checked?:boolean}) {
     return (
         <label class={radioStyle}>
             <input type="radio" name={props.name} value={props.value} class="" checked={props.checked}/>
-            <p>{props.name}</p>
+            <p>{props.value}</p>
         </label>
         
     )

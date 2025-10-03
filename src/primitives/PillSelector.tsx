@@ -16,12 +16,12 @@ export function PillSelector () {
     
     // Creating the Pill
     const Pill = (props : { option : PackageOption } ) => {
-        const pillStyle = "text-[16px] py-2 px-5 cursor-pointer transition-bg duration-250";
+        const pillStyle = "text-[16px] py-2 px-4 md:px-5 cursor-pointer transition-bg duration-250";
         return (
             <button class={pillStyle}
                     onClick={() => setPackageOption(props.option.name)}
                     classList={{
-                        "bg-[#256AF4] text-white" : packageOption() === props.option.name,
+                        "bg-[#256AF4] text-white shadow-2xl shadow-[#256AF4]" : packageOption() === props.option.name,
                         "bg-transparent text-white/60 hover:bg-white/10" : packageOption() !== props.option.name
                     }}>
                 {props.option.name}

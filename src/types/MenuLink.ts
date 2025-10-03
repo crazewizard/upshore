@@ -1,17 +1,23 @@
 export type MenuLink = {
-    Label: string;
-    Description: string;
-    Link : string;
+    title: string;
+    description: string;
+    link : string;
+}
+
+export const Home : MenuLink = {
+    title : "Home",
+    description : "LEARN ABOUT WHAT WE DO!",
+    link : ""
 }
 
 export const Work : MenuLink = {
-    Label : "Work",
-    Description : "Browse our work",
-    Link : ""
+    title : "Work",
+    description : "BROWSE OUR WORK",
+    link : "work"
 }
 
 export const Studio : MenuLink = {
-    Label : "Studio",
-    Description : "EXPERIENCE OUR CREATIVITY",
-    Link : ""
+    title : "Studio",
+    description : "EXPERIENCE OUR CREATIVITY",
+    link : "studio"
 }

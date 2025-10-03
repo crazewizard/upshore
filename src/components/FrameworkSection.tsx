@@ -4,7 +4,7 @@ export function FrameworkSection () {
     <div class="relative w-full no-line-height font-medium text-black/10 lg:!text-[110px] md:!text-[90px] !text-[68px] py-8 md:py-12 -z-10 mb-0 md:mb-36">
         <span class="text-black/90" >We Work Globaly –– </span>
         <span>with market’s favorites tools and frameworks</span>
-        <span class="flex -space-x-4 inline-block">&nbsp
+        <span class="-space-x-4 inline-block">&nbsp
           {<Frameworks Framework={"Figma"}/>}
           {<Frameworks Framework={"React"}/>}
           {<Frameworks Framework={"Framer"}/>}
@@ -18,7 +18,7 @@ export function FrameworkSection () {
 //md:sticky md:top-12
 export function Frameworks (props: { Framework : string}){
   return (
-    <span class="flex inline-block rounded-full
+    <span class="inline-block rounded-full
                   lg:w-[100px] lg:h-[100px]
                   md:w-[80px] md:h-[80px]
                   w-[48px] h-[48px]
