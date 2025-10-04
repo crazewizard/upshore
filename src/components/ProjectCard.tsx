@@ -19,7 +19,7 @@ export function ProjectCard ( props: { project: Project, size?:any, class?:strin
                 {props.project.year}
             </span>
 
-            <div class="absolute top-6 right-6 text-5xl border border-white p-3 rounded-full opacity-30 hover:opacity-100 transition-opacity duration-500">
+            <div class="absolute top-6 right-6 text-5xl border border-white p-3 rounded-full opacity-30 hover:opacity-100 transition-opacity duration-500 cursor-pointer">
                 <img src="/icons/ArrowUPForward.svg" />
             </div>
             

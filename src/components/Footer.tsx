@@ -20,11 +20,12 @@ export function Footer () {
                 </div>
                 
                 <div class="flex flex-col md:flex-row w-full md:place-content-between items-center md:py-[24px] pb-24 gap-4">
-                    <a href="" class="flex items-center gap-2  opacity-60 hover:opacity-100">
+                    <a  href="mailto:leonardo@upshore.studio?subject=re%20–%20Design%20/%20Build%20a%20Digital%20Product&body=Hi%20there!" 
+                        class="flex items-center gap-2  opacity-60 hover:opacity-100">
                         <p class="mt-[2px]">LEONARDO@UPSHORE.STUDIO</p> 
                         <img src="/public/icons/Mail-icon-2.svg" class="w-[24px] h-[24px]" />
                     </a>
-                    <a href="" class="flex items-center gap-2  opacity-60 hover:opacity-100">
+                    <a href="/privacy" class="flex items-center gap-2  opacity-60 hover:opacity-100">
                         <p class="mt-[2px]">PRIVACY POLICY</p> 
                         <img src="/public/icons/ArrowUPForward.svg" class="invert w-[24px] h-[24px]" />
                     </a>

@@ -10,12 +10,12 @@ export const Leonardo : Person = {
     Name: "Leonardo",
     Title: "Head of Engineering",
     Avatar: "../public/team/leonardo.png",
-    Social: "",
+    Social: "linkedin.com/in/leonardo-balduzzi",
   }
   
 export const Alison : Person = {
     Name: "Alison",
     Title: "Head of Design",
     Avatar: "../public/team/alison.png",
-    Social: "",
+    Social: "linkedin.com/in/alisondina",
   }

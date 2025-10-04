@@ -12,7 +12,7 @@ export default function Work () {
     return (
         <div class={parentStyle}>
             <PageHeader title="Our Work" />
-            <div class="flex flex-wrap w-full gap-4 py-8 mx-auto justify-center">
+            <div class="flex flex-wrap w-full gap-4 px-4 py-8 mx-auto justify-center">
                 <For each={projectData.projects}>
                     {(work) => <ProjectCard project={work} class="w-full md:max-w-[510px]" />}
                 </For>

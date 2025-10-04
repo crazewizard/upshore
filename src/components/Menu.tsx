@@ -2,6 +2,7 @@ import { UpshoreButton } from "~/primitives/UpshoreButton";
 import { Signal, createSignal, onCleanup, onMount } from "solid-js";
 import { MenuLink,Home, Work, Studio } from "~/types/MenuLink";
 import { A } from "@solidjs/router";
+import { setShowForm } from "./ContactForm";
 
 export const [showMenu, setShowMenu] = createSignal(false);
 
@@ -29,6 +30,12 @@ export function Menu() {
                     <MenuItem Link={Home} />
                     <MenuItem Link={Work} />
                     <MenuItem Link={Studio} />
+
+                    <a onclick={()=> setShowForm(true)} class="flex w-full px-4 py-2 gap-1 items-center justify-center hover:bg-[#F24347] rounded-2xl transition-colors duration-500 border border-transparent hover:border-white/10" >
+                            <img src="/icons/Emoji.png" class="w-[32px] h-[32px]" />
+                            <span class=" text-white">Get in touch</span>
+                    </a>
+                    {/* 
                     <div class="flex gap-2">
                         <a href="" class="flex p-4 gap-2" >
                             <img src="/icons/LinkedIn.svg" class="w-[24px] h-[24px]" />
@@ -38,7 +45,7 @@ export function Menu() {
                             <img src="/icons/LinkedIn.svg" class="w-[24px] h-[24px]" />
                             <span class=" text-white">LinkedIn</span>
                         </a>
-                    </div>
+                    </div>*/}
                 </div>
             )}
         </div>

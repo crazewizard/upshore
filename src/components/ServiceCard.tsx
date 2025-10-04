@@ -5,7 +5,7 @@ export function ServiceCard ( props : { Service : Service }) {
                                     bg-black/5 rounded-3xl 
                                     border border-black/10 
                                     place-content-center 
-                                    backdrop-blur-3xl
+                                    backdrop-blur-3xl cursor-pointer
                                     hover:bg-black/90 active:bg-black/90 transition-bg duration-250`;
     return (
         <div class={`${componentStyle}`}>

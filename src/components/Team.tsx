@@ -31,10 +31,11 @@ export function Avatar (props: { Person: Person; Style:DynamicStyle }) {
                         >
 
                     <div class="group relative flex flex-col gap-4 backdrop-blur-sm bg-black/90 items-center
-                                w-[300px] md:w-[350px] h-[300px] md:h-[360px] rounded-4xl p-6 md:p-8 z-90 fade-in">
+                                w-[300px] md:w-[350px] h-auto rounded-4xl p-6 md:p-8 z-70 fade-down">
 
                         <a  class="absolute top-4 right-4 md:top-6 md:right-6 border border-white p-2 md:p-3 rounded-full transition-opacity duration-500 opacity-40 hover:opacity-100"
-                            href={props.Person.Social} >
+                            href={`https://www.${props.Person.Social}`}
+                            target="_blank" rel="noopener noreferrer" >
                             <img src="/icons/ArrowUPForward.svg" />
                         </a>
 
@@ -42,7 +43,7 @@ export function Avatar (props: { Person: Person; Style:DynamicStyle }) {
                         <h3 class="text-white">{props.Person.Name}</h3>
                         <p class="text-white/60">{props.Person.Title}</p>
 
-                        <a href={props.Person.Social} class="flex p-4 gap-2" >
+                        <a href={`https://www.${props.Person.Social}`} class="flex p-4 gap-2" target="_blank" rel="noopener noreferrer" >
                             <img src="/icons/LinkedIn.svg" class="w-[24px] h-[24px]" />
                             <span class=" text-white">LinkedIn</span>
                         </a>
