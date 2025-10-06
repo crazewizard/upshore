@@ -22,7 +22,7 @@ export function Frameworks (props: { Framework : string}){
                   lg:w-[100px] lg:h-[100px]
                   md:w-[80px] md:h-[80px]
                   w-[48px] h-[48px]
-                  backdrop-blur-md bg-black/5 border border-black/10" >
+                  backdrop-blur-md bg-black/5 hover:bg-white/90 border border-black/10" >
       <img src={`/frameworks/${props.Framework}.svg`} class="w-full h-full bg-size-[100%] object-cover bg-center bg-no-repeat" />
     </span>
   )

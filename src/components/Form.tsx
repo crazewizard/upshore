@@ -1,6 +1,11 @@
+import { createSignal, For } from "solid-js";
 import { Input } from "~/primitives/Input";
 import { Radio } from "~/primitives/Radio";
 import { TextArea } from "~/primitives/textArea";
+
+const radioValues = ["Mobile App", "SAAS", "Landing Page"];
+const radioName = "Product";
+export const [activeRadio, setActiveRadio] = createSignal(radioValues[0])
 
 export function Form () {
     const formStyle="flex flex-col gap-4 w-full";
@@ -9,9 +14,13 @@ export function Form () {
     return (
         <form class={formStyle}>
             <div class="flex gap-2 md:gap-4 mt-4">
-                <Radio name="Product type" value="Mobile App" checked/>
-                <Radio name="Product type" value="SAAS" />
-                <Radio name="Product type" value="Landing Page" />
+                <For each={radioValues}>
+                    {(radio)=> <Radio name={radioName} value={radio}/>}
+                </For>
+
+                {/*<Radio name={radioName} value={radioValues.Mobile} checked/>
+                <Radio name={radioName} value={radioValues.SAAS} />
+                <Radio name={radioName} value={radioValues.Landing} />*/}
             </div>
 
             <div class="flex w-full gap-2 md:gap-4">

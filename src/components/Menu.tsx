@@ -7,7 +7,7 @@ import { setShowForm } from "./ContactForm";
 export const [showMenu, setShowMenu] = createSignal(false);
 
 export function Menu() {
-    const menuStyle = "absolute top-[80px] p-4 left-1/2 -translate-x-1/2 z-10 w-full md:w-auto fade-down";
+    const parentStyle = "absolute top-[64px] p-8 left-1/2 -translate-x-1/2 z-10 w-full md:w-auto fade-down";
 
     onMount(() => {
         const handleScroll = () => {
@@ -23,7 +23,7 @@ export function Menu() {
     return (
         <div onMouseLeave={() => setShowMenu(false)}
             id="menu"
-            class={menuStyle}>
+            class={parentStyle}>
             {showMenu() && (
                 <div class="group flex flex-col gap-4 bg-black/90 backdrop-blur-sm items-center
                         w-full md:w-[500px] h-auto rounded-4xl p-4 border border-white/10">

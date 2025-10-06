@@ -1,5 +1,6 @@
 import { Signal, createSignal, onCleanup,onMount } from "solid-js"
-import { PillSelector, packageOption} from "~/primitives/PillSelector";
+import { servicePill, ServicePill} from "~/primitives/ServicePill";
+import { ProductPill, productPill } from "~/primitives/ProductPill";
 import { UpshoreButton } from "~/primitives/UpshoreButton";
 import { Form } from "./Form";
 
@@ -33,8 +34,8 @@ export function ContactForm () {
             {showForm() && (
                 <div class={formStyle}>
                     <UpshoreButton icon="Close" action={()=>setShowForm(false)} style={closeStyle}/>
-                    <PillSelector />
-                    <h1 class={h1Style}>Let's <span class="text-white/80 group-hover:text-white transtision duration-1000">{packageOption()}</span> Something Great Together</h1>
+                    <ServicePill />
+                    <h1 class={h1Style}>Let's <span class="text-white/80 group-hover:text-[#256AF4] transtision duration-1000">{servicePill()}</span> Something Great Together</h1>
                     <Form />
                 </div>
             )}
