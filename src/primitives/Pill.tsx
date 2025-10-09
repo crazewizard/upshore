@@ -1,7 +1,7 @@
 import { servicePill, setServicePill } from "~/components/Form";
 
 export function Pill (props: {pill:string}) {
-    const pillStyle = "text-[16px] py-2 px-4 md:px-5 cursor-pointer transition-all duration-250";
+    const pillStyle = "text-[16px] py-2 px-4 md:px-5 rounded-xl cursor-pointer transition-all duration-500";
     return (
         <div class={pillStyle}
                 onClick={() => setServicePill(props.pill)}

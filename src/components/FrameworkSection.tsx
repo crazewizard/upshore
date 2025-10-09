@@ -4,7 +4,7 @@ export function FrameworkSection () {
     <div class="relative w-full no-line-height font-medium text-black/10 lg:!text-[110px] md:!text-[90px] !text-[68px] py-8 md:py-12 -z-10 mb-0 md:mb-36">
         <span class="text-black/90" >We Work Globaly –– </span>
         <span>with market’s favorites tools and frameworks</span>
-        <span class="-space-x-4 inline-block">&nbsp
+        <span class="-space-x-4 hover:space-x-4 inline-block transition-all duration-500">&nbsp
           {<Frameworks Framework={"Figma"}/>}
           {<Frameworks Framework={"React"}/>}
           {<Frameworks Framework={"Framer"}/>}

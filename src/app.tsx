@@ -7,6 +7,8 @@ import { ContactCTA } from "~/components/ContactCTA";
 import { Footer } from "~/components/Footer";
 import { setShowForm, showForm } from "./components/ContactForm";
 import { setShowMenu, showMenu } from "./components/Menu";
+import { sent, setSent } from "./components/Form";
+import { SentModal } from "./components/SentModal";
 
 export default function App() {
 
@@ -18,6 +20,7 @@ export default function App() {
       root={props => (
         <>
           <Navigation />
+          {sent() && <SentModal />}
           <ContactCTA />
           <Suspense>{props.children}</Suspense>
           <Footer />

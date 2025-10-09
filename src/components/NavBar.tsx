@@ -10,7 +10,7 @@ export function NavBar () {
                 <A href="/" class="min-w-[48px] h-[48px]"><img src="/Upshore-logo.svg" alt="Upshore-logo" class="w-full h-full"/></A>
                 <div class="w-full overflow-hidden md:block hidden place-content-around">
                     <h5 class="text-[20px] !text-black">Upshore studio</h5>
-                    <p class="w-full uppercase !text-[12px] text-gray-300 overflow-hidden whitespace-nowrap text-ellipsis">WE DESIGN AND BUILD DIGITAL PRODUCTS –– EXPERIENCES THAT WIN HEARTS</p>
+                    <p class="w-full uppercase !text-[12px] text-gray-300 overflow-hidden whitespace-nowrap text-ellipsis">WE DESIGN –– BUILD DIGITAL EXPERIENCES / PRODUCTS</p>
                 </div>
 
                 <UpshoreButton icon="Language-icon" action="" style={buttonStyle}/>

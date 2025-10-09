@@ -1,19 +1,19 @@
 export type Service = {
-    Title: string;
-    Link: string;
+    title: string;
+    label: string;
 }
 
 export const MobileApp : Service = {
-    Title : "Mobile App",
-    Link : "",
+    title : "Mobile App",
+    label : "Mobile App",
 }
 
 export const SaaSProduct : Service = {
-    Title : "SaaS Product",
-    Link : "",
+    title : "SaaS Product",
+    label : "SaaS Product",
 }
 
 export const LandingPage : Service = {
-    Title : "Landing Page",
-    Link : "",
+    title : "Landing Page",
+    label : "Landing Page",
 }

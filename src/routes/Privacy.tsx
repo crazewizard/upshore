@@ -8,7 +8,7 @@ export default function Privacy() {
         <div class={parentStyle}>
             <PageHeader title="Privacy Policy" />
             <div class="p-4">
-                <div class="flex flex-wrap w-full md:max-w-[800px] gap-4 p-8 md:my-8 mx-auto justify-center bg-white border border-black/10 rounded-4xl">
+                <div class="flex flex-wrap w-full md:max-w-[800px] gap-4 p-4 pt-6 md:p-8 md:my-8 mx-auto justify-center bg-white border border-black/10 rounded-2xl md:rounded-4xl">
                     <pre class="w-full text-wrap">
                         {privacy}
                     </pre>

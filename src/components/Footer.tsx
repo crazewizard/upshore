@@ -1,8 +1,8 @@
-import { ServiceCard } from "./ServiceCard";
+import { ProductCard } from "./ProductCard";
 import { Service, MobileApp, SaaSProduct, LandingPage } from "~/types/Service";
-import { CreativeTeam } from "./CreativeTeam";
-import { FrameworkSection } from "./FrameworkSection";
 import { Bars } from "~/primitives/Bars";
+import { radioValues } from "./Form";
+import { For } from "solid-js";
 
 export function Footer () {
     return (
@@ -11,9 +11,10 @@ export function Footer () {
           
             <div class="w-full flex flex-col gap-2 bg-gradient-to-b from-[#F7F7F700] to-[#F7F7F7] to-70% z-20" >
                 <div class="w-full flex flex-col gap-4 z-20 md:flex-row">
-                    <ServiceCard Service={MobileApp} />
-                    <ServiceCard Service={SaaSProduct} />
-                    <ServiceCard Service={LandingPage} />
+                    <For each={radioValues}>
+                        {(service) => <ProductCard service={service}/>}
+                    </For>
+
                 </div>
                 <div class="w-full overflow-x-hidden py-4">
                     <span class="no-line-height text-[48px] md:text-[120px] text-center whitespace-wrap md:whitespace-nowrap text-black/10">Copyright 2025 © Upshore</span>
