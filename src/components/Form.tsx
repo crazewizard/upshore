@@ -24,7 +24,7 @@ const h1Style = "text-white/60 text-[38px] md:text-[48px] transtision-all durati
 
 export function Form () {
     const formStyle="flex flex-col gap-4 w-full";
-    const sendButtonStyle = "flex gap-2 bg-[#256AF4] text-white border border-white/10 p-2 px-6 rounded-xl hover:shadow-2xl hover:shadow-[#256AF4]";
+    const sendButtonStyle = "flex gap-2 bg-[#256AF4] text-white border border-white/10 p-2 px-6 rounded-xl hover:shadow-2xl hover:shadow-[#256AF4] transition-all duration-500";
 
     const handleSubmit = async ( e:any ) => {
         e.preventDefault();
@@ -93,7 +93,7 @@ export function Form () {
             <div class="flex w-full gap-4 place-content-between md:mt-4 items-center">
                 <p class="text-white/60 max-w-[300px]">By clicking on the button you agree to the processing of your personal data</p>
                 <button type="submit" class={sendButtonStyle} disabled={sending()}
-                        classList={{"bg-white/10" : sending()===true, "bg-[#256AF420]": sent()===true}}>
+                        classList={{"bg-white/10" : sending()===true}}>
                     <p>{sending() ? "Sending..." : sent() ? "Sent" : "Send"}</p>
                     <img src="/icons/PaperPlane.svg" class="w-4 h-4"/>
                 </button>
