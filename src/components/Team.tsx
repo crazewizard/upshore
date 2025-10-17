@@ -5,13 +5,13 @@ import { Signal, createSignal } from "solid-js";
 export function Team (){
     return (
         <span class="flex -space-x-4">
-            <Avatar Person={Leonardo} Style={"w-16 h-16 bg-black/5"}/>
-            <Avatar Person={Alison} Style={"w-16 h-16 bg-black/5"}/>
+            <Avatar Person={Leonardo} Style={"w-16 h-16 bg-accent"}/>
+            <Avatar Person={Alison} Style={"w-16 h-16 bg-accent"}/>
         </span>
     );
 }
 
-const avatarStyle = "inline-block relative backdrop-blur-sm border border-black/10 rounded-full bg-size-[100%] bg-cover bg-center bg-no-repeat";
+const avatarStyle = "inline-block relative backdrop-blur-sm border border-border rounded-full bg-size-[100%] bg-cover bg-center bg-no-repeat";
 
 export function Avatar (props: { Person: Person; Style:DynamicStyle }) {
     const [showFloating, setShowFloating] = createSignal (false);
@@ -30,7 +30,7 @@ export function Avatar (props: { Person: Person; Style:DynamicStyle }) {
                                 `}   
                         >
 
-                    <div class="group relative flex flex-col gap-4 backdrop-blur-sm bg-black/90 items-center
+                    <div class="group relative flex flex-col gap-4 backdrop-blur-sm bg-overlay border border-border items-center
                                 w-[300px] md:w-[350px] h-auto rounded-4xl p-6 md:p-8 z-70 fade-down">
 
                         <a  class="absolute top-4 right-4 md:top-6 md:right-6 border border-white p-2 md:p-3 rounded-full transition-opacity duration-500 opacity-40 hover:opacity-100"

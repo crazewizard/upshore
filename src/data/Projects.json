@@ -4,7 +4,7 @@
             "id" : 1,
             "title" : "Trinket",
             "coverImage" : "Trinket",
-            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
+            "description" : "Exclusive Merch. Personal Video Calls. All from your Favorite Stars.",
             "projectUrl" : "trinket.ai",
             "year": 2025
         },
@@ -12,25 +12,25 @@
             "id" : 2,
             "title" : "Founders Lair",
             "coverImage" : "FoundersLair",
-            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
-            "projectUrl" : "string",
+            "description" : "Ignite your journey as a startup ecosystem expert. Connect founders with transformative opportunities, unlock new levels of engagement, and showcase your expertise.",
+            "projectUrl" : "app.founderslair.com",
             "year": 2022
         },
         {
             "id" : 3,
-            "title" : "Elite XP",
-            "coverImage" : "EliteXP",
-            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
-            "projectUrl" : "string",
-            "year": 2023
+            "title" : "Seoul Law Group",
+            "coverImage" : "SLG",
+            "description" : "Assisting foreigners in navigating the complexities of the Korean legal system",
+            "projectUrl" : "seoullawgroup.com",
+            "year": 2025
         },
         {
             "id" : 4,
-            "title" : "XPF",
-            "coverImage" : "XPF",
-            "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum.",
-            "projectUrl" : "string",
-            "year": 2024
+            "title" : "Incubated Scale",
+            "coverImage" : "Incubated",
+            "description" : "Boost Your Business with Short-Form Content.",
+            "projectUrl" : "incubatedscale.com",
+            "year": 2023
         }
         
     ]
