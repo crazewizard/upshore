@@ -1,8 +1,8 @@
 
 export function FrameworkSection () {
   return (
-    <div class="relative w-full no-line-height font-medium text-black/10 lg:!text-[110px] md:!text-[90px] !text-[68px] py-8 md:py-12 -z-10 mb-0 md:mb-36">
-        <span class="text-black/90" >We Work Globaly –– </span>
+    <div class="relative w-full no-line-height font-medium text-disabled lg:!text-[110px] md:!text-[90px] !text-[68px] py-8 md:py-12 -z-10 mb-0 md:mb-36">
+        <span class="text-primary" >We Work Globaly –– </span>
         <span>with market’s favorites tools and frameworks</span>
         <span class="-space-x-4 hover:space-x-4 inline-block transition-all duration-500">&nbsp
           {<Frameworks Framework={"Figma"}/>}
@@ -22,7 +22,7 @@ export function Frameworks (props: { Framework : string}){
                   lg:w-[100px] lg:h-[100px]
                   md:w-[80px] md:h-[80px]
                   w-[48px] h-[48px]
-                  backdrop-blur-md bg-black/5 hover:bg-white/90 border border-black/10" >
+                  backdrop-blur-md bg-disabled border border-border" >
       <img src={`/frameworks/${props.Framework}.svg`} class="w-full h-full bg-size-[100%] object-cover bg-center bg-no-repeat" />
     </span>
   )

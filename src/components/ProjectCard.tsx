@@ -8,7 +8,7 @@ onMount(() => setCardWidth (window.innerWidth < 640 ? 360 : 600));
 export function ProjectCard ( props: { project: Project, size?:any, class?:string}) {
     return (
         <div    class={`group flex relative backdrop-blur-sm 
-                        md:border-1 md:border-black/10 hover:border-black/50
+                        md:border-1 md:border-border hover:border-tersiary
                         h-[500px] md:h-[640px]
                         rounded-3xl md:rounded-4xl  overflow-hidden 
                         items-baseline-last ${props.class}`}

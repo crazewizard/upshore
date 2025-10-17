@@ -6,7 +6,7 @@ export function NavBar () {
     return (
         <div >
             {showMenu() && (<Menu />)}  
-            <div class="flex absolute right-4 md:left-1/2 md:-translate-x-1/2 w-auto md:w-[500px] p-2 space-x-2 rounded-[20px] bg-background border border-border">
+            <div class="flex absolute right-4 md:left-1/2 md:-translate-x-1/2 w-auto md:w-[500px] p-2 space-x-2 rounded-[20px] bg-pure border border-border">
                 <A href="/" class="min-w-[48px] h-[48px]"><img src="/Upshore-logo.svg" alt="Upshore-logo" class="w-full h-full"/></A>
                 <div class="w-full overflow-hidden md:block hidden place-content-around">
                     <h5 class="text-[20px] !text-primary">Upshore studio</h5>

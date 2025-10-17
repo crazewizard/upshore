@@ -39,6 +39,7 @@
 
     --background: hsla(0, 0%, 97%, 1);
     --foreground: hsla(0, 0%, 5%, 1);
+    --pure: hsla(0, 0%, 100%, 1);
 
     --primary: var(--black-100);
     --secondary: var(--black-60);
@@ -60,15 +61,16 @@
   :root {
     color-scheme: dark;
 
-    --background: hsla(0, 0%, 0%, 1);
-    --foreground: hsla(0, 0%, 100%, 1);
+    --background: hsla(0, 0%, 5%, 1);
+    --pure: hsla(0, 0%, 0%, 1);
+    --foreground: hsla(0, 0%, 95%, 1);
 
     --primary: var(--white-100);
     --secondary: var(--white-60);
     --tertiary: var(--white-20);
     --disabled: var(--white-10);
     --accent: var(--white-5);
-    --overlay: var(--black-90);
+    --overlay: var(--white-5);
 
     --border: var(--white-10);
 
@@ -83,6 +85,7 @@
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-pure: var(--pure);
 
   --color-brand-blue: var(--brand-blue);
   --color-brand-red: var(--brand-red);

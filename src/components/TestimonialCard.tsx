@@ -2,9 +2,9 @@ import { Testimonial } from "../types/Testimonial";
 
 export function TestimonialCard (props: { Testimonial : Testimonial }) {
     return (
-        <div class="flex flex-col min-w-[360px] h-[450px] bg-white border border-black/10 rounded-3xl p-6 gap-10">
+        <div class="flex flex-col min-w-[360px] h-[450px] bg-pure border border-border rounded-3xl p-6 gap-10">
             <div class="w-full flex justify-between items-center">
-                <img class="w-[64px] rounded-full bg-black/5 border border-black/10" src={props.Testimonial.avatar} />
+                <img class="w-[64px] rounded-full bg-accent border border-border" src={props.Testimonial.avatar} />
                 <img class="w-[160px]" src={props.Testimonial.company} />
             </div>
             <div class="h-full flex flex-col gap-6">
@@ -13,10 +13,10 @@ export function TestimonialCard (props: { Testimonial : Testimonial }) {
             </div>
             
             
-            <div class="content-end pl-4 border-l-2 border-black/10">
+            <div class="content-end pl-4 border-l-2 border-border">
                 <h4>{props.Testimonial.name}</h4>
-                <p class="text-black/40">{props.Testimonial.position}</p>
-                <p class="text-black/40">{props.Testimonial.country}</p>
+                <p class="text-secondary">{props.Testimonial.position}</p>
+                <p class="text-secondary">{props.Testimonial.country}</p>
             </div>
         </div>
     )
