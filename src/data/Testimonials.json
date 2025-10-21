@@ -3,7 +3,7 @@
         {
             "id" : 1 ,
             "avatar" : "/team/alison.png",
-            "company" : "/company-logos/Founders-Lair.svg",
+            "company" : "FoundersLair",
             "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna",
             "name" : "Jelte Wingender",
             "position" : "CEO & Co-Founder",
@@ -12,7 +12,7 @@
         {
             "id" : 2 ,
             "avatar" : "/team/alison.png",
-            "company" : "/company-logos/Elite-xp.svg",
+            "company" : "EliteXP",
             "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna",
             "name" : "Justin",
             "position" : "CEO & Co-Founder",
@@ -21,7 +21,7 @@
         {
             "id" : 3 ,
             "avatar" : "/team/alison.png",
-            "company" : "/company-logos/Elite-xp.svg",
+            "company" : "EliteXP",
             "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna",
             "name" : "Justin",
             "position" : "CEO & Co-Founder",
@@ -30,7 +30,7 @@
         {
             "id" : 4 ,
             "avatar" : "/team/alison.png",
-            "company" : "/company-logos/Elite-xp.svg",
+            "company" : "EliteXP",
             "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna",
             "name" : "Justin",
             "position" : "CEO & Co-Founder",
@@ -39,7 +39,7 @@
         {
             "id" : 5 ,
             "avatar" : "/team/alison.png",
-            "company" : "/company-logos/Elite-xp.svg",
+            "company" : "EliteXP",
             "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna",
             "name" : "Justin",
             "position" : "CEO & Co-Founder",

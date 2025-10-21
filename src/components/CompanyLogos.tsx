@@ -1,17 +1,13 @@
-import { For } from "solid-js"
-
-const CompanyLogo = (props: {src:string}) => <img src={`/company-logos/${props.src}.svg`} class="h-[64px] md:h-[80px]"/>
-
-const logos = [
-  "Founders-Lair",
-  "Elite-xp",
-  "Incubated",
-  "k-bio",
-  "Xtellar",
-];
+import { For } from "solid-js";
+import { Company } from "~/primitives/Company";
+import * as Companies from "~/companies";
+import { EliteXP } from "~/companies";
 
 export function CompanyLogos () {
-    return (
+  
+  const entries = Object.entries(Companies);
+    
+  return (
       <div class="w-full overflow-hidden py-4 md:py-8">
         <style>{`
                   @keyframes scroll {
@@ -23,9 +19,13 @@ export function CompanyLogos () {
               style = {{width : 'auto',
                         animation: `scroll 30s linear infinite`
               }}>
-          <For each={[...logos, ...logos, ...logos, ...logos]}>
-            {(logo) => <CompanyLogo src={(logo)} />}
+
+          <For each={[...entries, ...entries, ...entries, ...entries]}>
+            {(logo) => <Company logo={(logo)} size=" min-w-[200px] md:min-w-[240px]" />}
           </For>
+
+          <Company logo={EliteXP} />
+          
         </div>
       </div>
      

@@ -3,6 +3,8 @@ import { ProjectCard } from "~/components/ProjectCard";
 import rawProjectData from "~/data/Projects.json";
 import { Project } from "~/types/Project";
 import { PageHeader } from "~/components/PageHeader";
+import { Company } from "~/primitives/Company";
+import { EliteXP } from "~/companies";
 
 const projectData : {projects:Project[]} = rawProjectData;
 
