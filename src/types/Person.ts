@@ -9,13 +9,13 @@ export type Person = {
 export const Leonardo : Person = {
     Name: "Leonardo",
     Title: "Head of Engineering",
-    Avatar: "../public/team/leonardo.png",
+    Avatar: "/team/leonardo.png",
     Social: "linkedin.com/in/leonardo-balduzzi",
   }
   
 export const Alison : Person = {
     Name: "Alison",
     Title: "Head of Design",
-    Avatar: "../public/team/alison.png",
+    Avatar: "/team/alison.png",
     Social: "linkedin.com/in/alisondina",
   }
