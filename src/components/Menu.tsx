@@ -25,7 +25,7 @@ export function Menu() {
             id="menu"
             class={parentStyle}>
             {showMenu() && (
-                <div class="group flex flex-col gap-4 bg-black/90 backdrop-blur-sm items-center
+                <div class="group flex flex-col gap-4 bg-overlay backdrop-blur-sm items-center
                         w-full md:w-[500px] h-auto rounded-4xl p-4 border border-white/10">
                     <MenuItem Link={Home} />
                     <MenuItem Link={Work} />

@@ -1,7 +1,7 @@
 
 export function FrameworkSection () {
   return (
-    <div class="relative w-full no-line-height font-medium text-disabled lg:!text-[110px] md:!text-[90px] !text-[68px] py-8 md:py-12 -z-10 mb-0 md:mb-36">
+    <div class="relative w-full no-line-height font-medium text-tertiary lg:!text-[110px] md:!text-[90px] !text-[68px] py-8 md:py-12 -z-10 mb-0 md:mb-36">
         <span class="text-primary" >We Work Globaly –– </span>
         <span>with market’s favorites tools and frameworks</span>
         <span class="-space-x-4 hover:space-x-4 inline-block transition-all duration-500">&nbsp

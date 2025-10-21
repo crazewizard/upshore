@@ -18,7 +18,7 @@ export function Hero () {
         <Bars Style={"h-[25vh] md:h-[30vh] sticky top-0"}/>
         <div class="flex flex-col md:flex-row items-end gap-8 md:gap-4  pt-8 pb-10">
           <h1 class="w-full text-[56px] md:text-[90px] md:max-w-[900px] sm:max-w-[100%]">
-             <span class="text-disabled"> We { <Heart />} </span> Design<span class="opacity-10"> –– </span>Build<span class="text-disabled"> Digital </span>Products
+             <span class="text-tertiary"> We { <Heart />} </span> Design<span class="opacity-20"> –– </span>Build<span class="text-tertiary"> Digital </span>Products
           </h1>
           
           <div class="w-full md:w-[400px] ml-0 md:ml-auto hidden md:block">
