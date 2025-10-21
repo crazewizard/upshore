@@ -7,7 +7,7 @@ import { setShowForm } from "./ContactForm";
 export const [showMenu, setShowMenu] = createSignal(false);
 
 export function Menu() {
-    const parentStyle = "absolute top-[64px] p-8 left-1/2 -translate-x-1/2 z-10 w-full md:w-auto fade-down";
+    const parentStyle = "absolute top-[64px] p-8 left-1/2 -translate-x-1/2 z-10 w-[100vw] md:w-auto fade-down";
 
     onMount(() => {
         const handleScroll = () => {
