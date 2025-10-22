@@ -10,7 +10,7 @@ export function TestimonialCard (props: { Testimonial : Testimonial }) {
             <div class="w-full flex justify-between items-center">
                 <img class="w-[64px] rounded-full bg-accent border border-border" src={props.Testimonial.avatar} />
                 {/*<img class="w-[160px]" src={props.Testimonial.company} />*/}
-                <Company logo={Companies[props.Testimonial.company as keyof typeof Companies]} size=" min-w-[64px] md:min-w-[64px] max-w-[200px]"/>
+                <Company logo={Companies[props.Testimonial.company as keyof typeof Companies]} size="w-[160px] min-w-[64px] md:min-w-[64px] max-w-[200px]"/>
             </div>
             <div class="h-full flex flex-col gap-6">
                 {/* <img class="w-10 opacity-10" src="/public/icons/Guillemets.svg" /> */}

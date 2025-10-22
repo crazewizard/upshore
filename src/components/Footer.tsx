@@ -28,7 +28,7 @@ export function Footer () {
                     </a>
                     <a href="/privacy" class="flex items-center gap-2  opacity-60 hover:opacity-100">
                         <p class="mt-[2px]">PRIVACY POLICY</p> 
-                        <img src="/icons/ArrowUPForward.svg" class="w-[24px] h-[24px] dark:inverted" />
+                        <img src="/icons/ArrowUPForward.svg" class="w-[24px] h-[24px] invert dark:invert-0" />
                     </a>
                 </div>
             </div>

@@ -11,7 +11,7 @@ export default function Studio () {
     return (
         <div class={parentStyle}>
             <PageHeader title="The Studio" />
-            <div class="flex flex-wrap w-full gap-16 px-4 py-8 mx-auto justify-center">
+            <div class="flex flex-wrap w-full gap-8 md:gap-16 px-4 py-8 mx-auto justify-center">
                 <For each={imageList}>
                     {(src) => <img src={src} alt="Studio Gallery" class={imageStyle}/>}
                 </For>
