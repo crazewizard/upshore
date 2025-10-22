@@ -3,6 +3,7 @@ import { Service, MobileApp, SaaSProduct, LandingPage } from "~/types/Service";
 import { Bars } from "~/primitives/Bars";
 import { radioValues } from "./Form";
 import { For } from "solid-js";
+import { A } from "@solidjs/router";
 
 export function Footer () {
     return (
@@ -26,10 +27,10 @@ export function Footer () {
                         <p class="mt-[2px]">LEONARDO@UPSHORE.STUDIO</p> 
                         <img src="/icons/Mail-icon-2.svg" class="w-[24px] h-[24px] invertthemeicon" />
                     </a>
-                    <a href="/privacy" class="flex items-center gap-2  opacity-60 hover:opacity-100">
+                    <A href="/privacy" class="flex items-center gap-2  opacity-60 hover:opacity-100">
                         <p class="mt-[2px]">PRIVACY POLICY</p> 
                         <img src="/icons/ArrowUPForward.svg" class="w-[24px] h-[24px] invert dark:invert-0" />
-                    </a>
+                    </A>
                 </div>
             </div>
         </main>
