@@ -1,11 +1,7 @@
-export function Company(props: {logo: any, size?:string}) {
+export function Company(props: {company: any, size?:string}) {
     return (
-        <svg role="img"
-            class={`fill-primary ${props.size}`}
-            viewBox="0 0 240 80"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-                {props.logo}
-        </svg>
+        <div class={`${props.size}`}>
+                {props.company}
+        </div>
     )
 }
