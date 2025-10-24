@@ -16,7 +16,7 @@ export function FrameworkSection() {
         <span>to provide the best in class experience.</span>
       </div>
       <A href="/Studio" class="flex flex-wrap gap-2 md:gap-8 my-12 cursor-pointer w-full" >
-        <img src="/icons/LongArrow.svg" class="invertthemeicon max-w-[400px]" alt="visit our studio"/>
+        <img src="/icons/LongArrow.svg" class="invertthemeicon max-w-[400px]" alt="To the studio"/>
         <span class="text-primary text-[40px] md:text-[48px] hover:text-brand-blue transitio-all duration-250">Visit our Studio</span>
       </A>
     </div>
