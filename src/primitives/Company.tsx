@@ -1,7 +1,7 @@
-export function Company(props: {company: any, size?:string}) {
+export function Company(props: {logo: any, size?:string}) {
     return (
         <div class={`${props.size}`}>
-                {props.company}
+                {props.logo}
         </div>
     )
 }

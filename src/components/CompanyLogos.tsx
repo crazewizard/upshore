@@ -1,7 +1,5 @@
 import { For } from "solid-js";
-import { Company } from "~/primitives/Company";
 import * as Companies from "~/companies";
-import { EliteXP } from "~/companies";
 
 export function CompanyLogos () {
   
@@ -25,8 +23,6 @@ export function CompanyLogos () {
               </div>
               }
           </For>
-
-          <Company company={EliteXP} />
           
         </div>
       </div>
