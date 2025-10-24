@@ -1,6 +1,6 @@
 import { For } from "solid-js";
 import { PageHeader } from "~/components/PageHeader";
-import { Title, Meta, MetaProvider } from "@solidjs/meta";
+import { Title, Meta, MetaProvider, Link } from "@solidjs/meta";
 import * as metaData from "~/data/Metadata";
 
 export default function Studio() {
@@ -15,13 +15,19 @@ export default function Studio() {
             <MetaProvider>
                 <Title>{metaData.studioTitle}</Title>
                 <Meta name="description" content={metaData.studioDescription} />
+                <Meta name="robots" content="index, follow" />
+                <Meta name="author" content="Upshore Studio" />
+                <Link rel="canonical" href={metaData.studioUrl} />
             </MetaProvider>
 
             <div class={parentStyle}>
                 <PageHeader title="The Studio" />
                 <div class="flex flex-wrap w-full gap-8 md:gap-16 px-4 py-8 mx-auto justify-center">
                     <For each={imageList}>
-                        {(src) => <img src={src} alt="Studio Gallery" class={imageStyle} />}
+                        {(src) => {
+                            const filename = src.split('/').pop()?.split('.')[0] || 'Studio Work';
+                            return <img src={src} alt={`${filename} - Upshore Studio Design Work`} class={imageStyle} />;
+                        }}
                     </For>
                 </div>
             </div>

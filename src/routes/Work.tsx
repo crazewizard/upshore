@@ -1,5 +1,5 @@
 import { For } from "solid-js";
-import { Title, Meta, MetaProvider } from "@solidjs/meta";
+import { Title, Meta, MetaProvider, Link } from "@solidjs/meta";
 import { ProjectCard } from "~/components/ProjectCard";
 import rawProjectData from "~/data/Projects.json";
 import { Project } from "~/types/Project";
@@ -16,6 +16,9 @@ export default function Work() {
             <MetaProvider>
                 <Title>{metaData.workTitle}</Title>
                 <Meta name="description" content={metaData.workDescription} />
+                <Meta name="robots" content="index, follow" />
+                <Meta name="author" content="Upshore Studio" />
+                <Link rel="canonical" href={metaData.workUrl} />
             </MetaProvider>
 
             <div class={parentStyle}>

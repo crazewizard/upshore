@@ -1,6 +1,6 @@
 import { PageHeader } from "~/components/PageHeader";
 import privacy from "~/data/Privacy.txt?raw";
-import { Title, Meta, MetaProvider } from "@solidjs/meta";
+import { Title, Meta, MetaProvider, Link } from "@solidjs/meta";
 import * as metaData from "~/data/Metadata";
 
 export default function Privacy() {
@@ -11,6 +11,9 @@ export default function Privacy() {
             <MetaProvider>
                 <Title>{metaData.privacyTitle}</Title>
                 <Meta name="description" content={metaData.privacyDescription} />
+                <Meta name="robots" content="index, follow" />
+                <Meta name="author" content="Upshore Studio" />
+                <Link rel="canonical" href={metaData.privacyUrl} />
             </MetaProvider>
 
             <div class={parentStyle}>
