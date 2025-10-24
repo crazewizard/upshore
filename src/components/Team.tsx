@@ -44,8 +44,8 @@ export function Avatar (props: { Person: Person; Style:DynamicStyle }) {
                         <p class="text-white/60">{props.Person.Title}</p>
 
                         <a href={`https://www.${props.Person.Social}`} class="flex p-4 gap-2" target="_blank" rel="noopener noreferrer" >
-                            <img src="/icons/LinkedIn.svg" class="w-[24px] h-[24px]" alt="LinkedIn icon" />
-                            <span class=" text-white">LinkedIn</span>
+                            <img src="/icons/Linkedin.svg" class="w-[24px] h-[24px]" alt="LinkedIn icon" />
+                            <span class=" text-white">Linkedin</span>
                         </a>
                     </div>
                 </div>
