@@ -36,7 +36,7 @@ export default function App() {
             <meta name="twitter:description" content={metaData.description} />
             <meta name="twitter:image" content={metaData.image} />
 
-            <link rel="icon" href={metaData.favicon} />
+            <link rel="icon" type="image/x-icon" href={metaData.favicon} />
           </MetaProvider>
 
           <Navigation />
