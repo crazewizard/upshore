@@ -1,0 +1,41 @@
+{
+    "site.title": "업쇼어 스튜디오",
+    "site.tagline": "우리는 디자인하고 –– 디지털 경험 / 제품을 만듭니다",
+  
+    "hero.title.part1": "우리는",
+    "hero.title.part2": "디자인하고",
+    "hero.title.part3": "개발합니다",
+    "hero.title.part4": "디지털",
+    "hero.title.part5": "제품을",
+  
+    "hero.h2": "우리는 해결책을 설계합니다!",
+    "hero.paragraph": "우리는 디자인부터 개발, 배포까지 디지털 제품의 전체 생애주기를 포괄하여 비즈니스를 성장시키는 소프트웨어를 만듭니다.",
+  
+    "hook1": "예쁜",
+    "hook2": "기능적인",
+    "hook3": "견고한",
+    "hook4": "확장 가능한",
+  
+    "workline.part1": "우리는 전 세계적으로 협업합니다 ––",
+    "workline.part2": "시장에서 선호하는 도구와 프레임워크를 사용하여",
+    "workline.part3": "최고 수준의 경험을 제공합니다.",
+  
+    "Studio.CTA": "우리 스튜디오 방문하기",
+  
+    "Testimonial.title": "클라이언트 스토리",
+  
+    "services.headline": "재 -- 디자인 / 개발",
+    "mobileApp": "모바일 앱",
+    "saasProduct": "SaaS 제품",
+    "landingPage": "랜딩 페이지",
+  
+    "copyright": "저작권 2025 © 업쇼어",
+    "cta.lets_work": "함께 일해요!",
+  
+    "work.title": "우리의 작업",
+    "studio.title": "스튜디오",
+    "privacy.title": "개인정보 보호정책",
+  
+    "404.title": "페이지를 찾을 수 없습니다",
+    "404.message": "이 페이지는 존재하지 않습니다. 이동되었거나 삭제되었거나 주소를 잘못 입력했을 수 있습니다. 홈으로 돌아가세요."
+  }

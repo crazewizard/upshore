@@ -1,0 +1,41 @@
+{
+    "site.title": "Upshore studio",
+    "site.tagline": "WE DESIGN –– BUILD DIGITAL EXPERIENCES / PRODUCTS",
+    
+    "hero.title.part1": "We",
+    "hero.title.part2": "Design",
+    "hero.title.part3": "Build",
+    "hero.title.part4": "Digital",
+    "hero.title.part5": "Products",
+    
+    "hero.h2": "We engineer solutions !",
+    "hero.paragraph": "We create software that drive businesses forward –– covering the complete lifecycle of a digital product from design to development, and deployment.",
+    
+    "hook1": "Pretty",
+    "hook2": "Functional",
+    "hook3": "Robust",
+    "hook4": "Scalable",
+    
+    "workline.part1": "We Work Globaly ––",
+    "workline.part2": "with market’s favorites tools and frameworks",
+    "workline.part3": "to provide the best in class experience.",
+    
+    "Studio.CTA": "Visit Our Studio",
+    
+    "Testimonial.title": "Our Client Stories",
+
+    "services.headline": "re -- Design / Build",
+    "mobileApp" : "Mobile App",
+    "saasProduct" : "SaaS Product",
+    "landingPage" : "Landing Page",
+
+    "copyright" : "Copyright 2025 © Upshore",
+    "cta.lets_work": "Let's work together!",
+    
+    "work.title" : "Our Work",
+    "studio.title" : "The Studio",
+    "privacy.title" : "PRIVACY POLICY",
+
+    "404.title": "Page not found",
+    "404.message": "Oops! The page you’re looking for doesn’t exist. It might have been moved, deleted, or you may have typed the URL incorrectly. Let’s get you back on track."
+}
