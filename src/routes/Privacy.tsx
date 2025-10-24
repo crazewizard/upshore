@@ -10,7 +10,7 @@ export default function Privacy() {
         <>
             <MetaProvider>
                 <Title>{metaData.privacyTitle}</Title>
-                <meta name="description" content={metaData.privacyDescription} />
+                <Meta name="description" content={metaData.privacyDescription} />
             </MetaProvider>
 
             <div class={parentStyle}>

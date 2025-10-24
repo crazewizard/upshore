@@ -15,7 +15,7 @@ export default function Work() {
         <>
             <MetaProvider>
                 <Title>{metaData.workTitle}</Title>
-                <meta name="description" content={metaData.workDescription} />
+                <Meta name="description" content={metaData.workDescription} />
             </MetaProvider>
 
             <div class={parentStyle}>

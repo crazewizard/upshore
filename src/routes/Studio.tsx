@@ -14,7 +14,7 @@ export default function Studio() {
         <>
             <MetaProvider>
                 <Title>{metaData.studioTitle}</Title>
-                <meta name="description" content={metaData.studioDescription} />
+                <Meta name="description" content={metaData.studioDescription} />
             </MetaProvider>
 
             <div class={parentStyle}>

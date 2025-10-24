@@ -1,6 +1,6 @@
 import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
-import { Title, MetaProvider } from "@solidjs/meta";
+import { Title, Meta,  MetaProvider } from "@solidjs/meta";
 import { createEffect, createRenderEffect, Suspense } from "solid-js";
 import { Navigation } from "~/components/Navigation";
 import "./app.css";
@@ -23,18 +23,18 @@ export default function App() {
         <>
           <MetaProvider>
             <Title>{metaData.title}</Title>
-            <meta name="description" content={metaData.description} />
+            <Meta name="description" content={metaData.description} />
 
-            <meta property="og:title" content={metaData.title} />
-            <meta property="og:description" content={metaData.description} />
-            <meta property="og:image" content={metaData.image} />
-            <meta property="og:url" content={metaData.url} />
-            <meta property="og:type" content="website" />
+            <Meta property="og:title" content={metaData.title} />
+            <Meta property="og:description" content={metaData.description} />
+            <Meta property="og:image" content={metaData.image} />
+            <Meta property="og:url" content={metaData.url} />
+            <Meta property="og:type" content="website" />
 
-            <meta name="twitter:card" content={metaData.title} />
-            <meta name="twitter:title" content={metaData.title} />
-            <meta name="twitter:description" content={metaData.description} />
-            <meta name="twitter:image" content={metaData.image} />
+            <Meta name="twitter:card" content={metaData.title} />
+            <Meta name="twitter:title" content={metaData.title} />
+            <Meta name="twitter:description" content={metaData.description} />
+            <Meta name="twitter:image" content={metaData.image} />
 
             <link rel="icon" type="image/x-icon" href={metaData.favicon} />
           </MetaProvider>
