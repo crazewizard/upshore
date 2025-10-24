@@ -6,7 +6,7 @@ export function TestimonialCard (props: { Testimonial : Testimonial }) {
     return (
         <div class="flex flex-col min-w-[360px] h-[450px] bg-card border border-border rounded-3xl p-6 gap-10">
             <div class="w-full flex justify-between items-center">
-                <img class="w-[64px] rounded-full bg-accent border border-border" src={props.Testimonial.avatar} />
+                <img class="w-[64px] rounded-full bg-accent border border-border" src={props.Testimonial.avatar} alt="Client avatar"/>
                 {/*<img class="w-[160px]" src={props.Testimonial.company} />*/}
                 <Company logo={Companies[props.Testimonial.company as keyof typeof Companies]} size="w-[160px] min-w-[64px] md:min-w-[64px] max-w-[200px]"/>
             </div>

@@ -25,11 +25,11 @@ export function Footer () {
                     <a  href="mailto:leonardo@upshore.studio?subject=re%20–%20Design%20/%20Build%20a%20Digital%20Product&body=Hi%20there!" 
                         class="flex items-center gap-2 opacity-60 hover:opacity-100">
                         <p class="mt-[2px]">LEONARDO@UPSHORE.STUDIO</p> 
-                        <img src="/icons/Mail-icon-2.svg" class="w-[24px] h-[24px] invertthemeicon" />
+                        <img src="/icons/Mail-icon-2.svg" class="w-[24px] h-[24px] invertthemeicon" alt="Send an email"/>
                     </a>
                     <A href="/privacy" class="flex items-center gap-2  opacity-60 hover:opacity-100">
                         <p class="mt-[2px]">PRIVACY POLICY</p> 
-                        <img src="/icons/ArrowUPForward.svg" class="w-[24px] h-[24px] invert dark:invert-0" />
+                        <img src="/icons/ArrowUPForward.svg" class="w-[24px] h-[24px] invert dark:invert-0" alt="Open privacy"/>
                     </A>
                 </div>
             </div>

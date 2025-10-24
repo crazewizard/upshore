@@ -6,7 +6,7 @@ const Heart = () => (
     <span role="img" data-nosnippet class="relative inline-block
                  w-[100px] h-[44px] md:w-[180px] md:h-[64px] 
                  rounded-full bg-overlay border border-tertiary">
-      <img src="/images/Heart1.png" class="h-[80px] md:h-[100px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2" />
+      <img src="/images/Heart1.png" alt="love" class="h-[80px] md:h-[100px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2" />
     </span>
   )
 

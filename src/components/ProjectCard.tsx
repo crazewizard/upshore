@@ -15,7 +15,7 @@ export function ProjectCard ( props: { project: Project, size?:any, class?:strin
                     
                 style={props.size}
                     >
-            <img src={`/projects/${props.project.coverImage}.jpg`} class="absolute w-[102%] h-[102%] -z-10 object-cover group-hover:scale-105 transition-scale duration-500"/>
+            <img src={`/projects/${props.project.coverImage}.jpg`} alt={`${props.project.title} project`} class="absolute w-[102%] h-[102%] -z-10 object-cover group-hover:scale-105 transition-scale duration-500"/>
 
             <span class="absolute top-6 left-6 md:top-8 md:left-8 font-[DS-Digital] text-5xl text-white">
                 {props.project.year}
@@ -23,7 +23,7 @@ export function ProjectCard ( props: { project: Project, size?:any, class?:strin
 
             <a  href={`https://${props.project.projectUrl}`} target="_blank" rel="noopener noreferrer"
                 class="absolute top-6 right-6 text-5xl border border-white p-3 rounded-full opacity-30 hover:opacity-100 transition-opacity duration-500 cursor-pointer">
-                <img src="/icons/ArrowUPForward.svg" />
+                <img src="/icons/ArrowUPForward.svg" alt="close button"/>
             </a>
             
             <div class="p-4 md:p-6 w-full" >

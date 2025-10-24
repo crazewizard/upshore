@@ -36,15 +36,15 @@ export function Avatar (props: { Person: Person; Style:DynamicStyle }) {
                         <a  class="absolute top-4 right-4 md:top-6 md:right-6 border border-white p-2 md:p-3 rounded-full transition-opacity duration-500 opacity-40 hover:opacity-100"
                             href={`https://www.${props.Person.Social}`}
                             target="_blank" rel="noopener noreferrer" >
-                            <img src="/icons/ArrowUPForward.svg" class="w-6 h-6"/>
+                            <img src="/icons/ArrowUPForward.svg" class="w-6 h-6" alt="Open link"/>
                         </a>
 
-                        <img src={props.Person.Avatar} class="w-[120px] h-[120px]" />
+                        <img src={props.Person.Avatar} class="w-[120px] h-[120px]" alt="Team member"/>
                         <h3 class="text-white">{props.Person.Name}</h3>
                         <p class="text-white/60">{props.Person.Title}</p>
 
                         <a href={`https://www.${props.Person.Social}`} class="flex p-4 gap-2" target="_blank" rel="noopener noreferrer" >
-                            <img src="/icons/LinkedIn.svg" class="w-[24px] h-[24px]" />
+                            <img src="/icons/LinkedIn.svg" class="w-[24px] h-[24px]" alt="LinkedIn icon"/>
                             <span class=" text-white">LinkedIn</span>
                         </a>
                     </div>

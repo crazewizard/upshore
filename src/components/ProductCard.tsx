@@ -20,7 +20,7 @@ export function ProductCard ( props : { service : string }) {
             <span class="text-2xl text-center opacity-40">re –– Design / Build</span>
             <span class="text-center text-[38px] md:text-[48px] block no-line-height">{props.service}</span>
             <div class="absolute top-6 right-6 md:top-8 md:right-8 border border-border p-2 md:p-4 rounded-full opacity-0 group-active:border-border group-hover:border-white group-hover:opacity-50 hover:opacity-100 transition-opacity duration-500">
-                <img src="/icons/ArrowUPForward.svg" class="" />
+                <img src="/icons/ArrowUPForward.svg" class="" alt="Start a project"/>
             </div>
             
         </div>
