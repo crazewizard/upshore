@@ -52,7 +52,7 @@ export function ProjectCarousel () {
     onCleanup(() => stopSlide());
 
     return(
-        <div class="relative w-[100vw] max-w-[2200px] left-1/2 -translate-x-1/2 px-4 md:px-4 overflow-hidden">
+        <div class="relative w-screen max-w-[2200px] left-1/2 -translate-x-1/2 px-4 md:px-4 overflow-hidden">
 
             <div class="w-full md:overflow-hidden rounded-0 md:rounded-3xl" >
                 <div    class = "flex gap-4"

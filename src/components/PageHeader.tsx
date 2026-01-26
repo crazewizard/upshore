@@ -5,7 +5,7 @@ export function PageHeader (props: {title:string}) {
     
     return (
         <div class={headerStyle}>
-            <h2 class="!text-[64px] md:!text-[110px] no-line-height text-center">{props.title}</h2>
+            <h2 class="text-[64px]! md:text-[110px]! no-line-height text-center">{props.title}</h2>
             <Bars Style={"h-[25vh] md:h-[30vh]"} />
         </div>
     )

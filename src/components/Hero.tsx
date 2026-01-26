@@ -17,7 +17,7 @@ export function Hero () {
       <div class="w-full relative flex flex-col gap-4 pt-0">
         <Bars Style={"h-[25vh] md:h-[30vh] sticky top-0"}/>
         <div class="flex flex-col md:flex-row items-end gap-8 md:gap-4  pt-8 pb-10">
-          <h1 class="w-full text-[56px] md:text-[90px] md:max-w-[900px] sm:max-w-[100%]">
+          <h1 class="w-full text-[56px] md:text-[90px] md:max-w-[900px] ">
              <span class="text-tertiary"> We { <Heart />} </span> Design<span class="opacity-20"> –– </span>Build<span class="text-tertiary"> Digital </span>Products
           </h1>
           
@@ -37,7 +37,7 @@ export function Hero () {
         
         <div class="w-full  block md:hidden py-8 px-2">
             <h5 class="text-brand-red">We engineer solutions !</h5>
-            <p class="!text-[18px] text-secondary">We create software that drive businesses forward –– covering the complete lifecycle of a digital product from design to development, and deployment.</p>
+            <p class="text-[18px]! text-secondary">We create software that drive businesses forward –– covering the complete lifecycle of a digital product from design to development, and deployment.</p>
           </div>
       </div>
     )

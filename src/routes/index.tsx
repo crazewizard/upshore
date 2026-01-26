@@ -53,7 +53,7 @@ export default function Home() {
         </script>
       </MetaProvider>
 
-      <main class="flex flex-col max-w-[1600px] w-[100vw]  mx-auto justify-items-center px-3 md:px-4 gap-10">
+      <main class="flex flex-col max-w-[1600px] w-screen  mx-auto justify-items-center px-3 md:px-4 gap-10">
         <Hero />
         <CompanyLogos />
         <FrameworkSection />

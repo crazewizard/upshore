@@ -1,6 +1,7 @@
 import { Person, Leonardo, Alison } from "../types/Person";
 import { DynamicStyle } from "~/types/DynamicStyle";
 import { Signal, createSignal } from "solid-js";
+import { A } from "@solidjs/router";
 
 export function Team (){
     return (
@@ -25,7 +26,7 @@ export function Avatar (props: { Person: Person; Style:DynamicStyle }) {
                 <div    onClick = {()=> setShowFloating(true)}
                         onMouseEnter={() => setShowFloating(true)}   // keep visible when hovering it
                         onMouseLeave={() => setShowFloating(false)}  // hide when leaving it
-                        class={`pt-[76px] absolute top-[0px] left-0 
+                        class={`pt-[76px] absolute top-0 left-0 
                                 ${showFloating() ? "block" : "hidden pointer-events-none "}
                                 `}   
                         >
@@ -33,11 +34,11 @@ export function Avatar (props: { Person: Person; Style:DynamicStyle }) {
                     <div class="group relative flex flex-col gap-4 backdrop-blur-sm bg-overlay border border-border items-center
                                 w-[300px] md:w-[350px] h-auto rounded-4xl p-6 md:p-8 z-70 fade-down">
 
-                        <a  class="absolute top-4 right-4 md:top-6 md:right-6 border border-white p-2 md:p-3 rounded-full transition-opacity duration-500 opacity-40 hover:opacity-100"
-                            href={`https://www.${props.Person.Social}`}
-                            target="_blank" rel="noopener noreferrer" >
+                        <A  class="absolute top-4 right-4 md:top-6 md:right-6 border border-white p-2 md:p-3 rounded-full transition-opacity duration-500 opacity-40 hover:opacity-100"
+                            href={(props.Person === Leonardo) ? `https://www.${props.Person.Social}` : `/${props.Person.Name}` }
+                            /*target="_blank" rel="noopener noreferrer"*/ >
                             <img src="/icons/ArrowUPForward.svg" class="w-6 h-6" alt="Open link"/>
-                        </a>
+                        </A>
 
                         <img src={props.Person.Avatar} class="w-[120px] h-[120px]" alt="Team member"/>
                         <h3 class="text-white">{props.Person.Name}</h3>
