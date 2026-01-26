@@ -63,14 +63,13 @@ export default function TeamMember() {
                 <Link rel="canonical" href={metaData.studioUrl} />
             </MetaProvider>
 
-            <div class="flex flex-col w-full max-w-[2200px] justify-center mx-auto">
+            <div class="flex flex-col w-full gap-16 max-w-[2200px] justify-center mx-auto">
                 <Bars Style={"h-[20vh] md:h-[25vh] sticky top-0"} />
-                <h1 class="text-[80px]! md:text-[110px]! no-line-height text-center my-16">{`${person().Name} /`}</h1>
+                <h1 class="text-[80px]! md:text-[110px]! no-line-height text-center">{`${person().Name} /`}</h1>
                 {/*<div class="bg-accent w-full h-[600px] md:h-[700px] rounded-2xl mx-auto z-50 backdrop-blur-3xl border border-accent"
                         style={{ "background-image": `url("")` }}>
                     somthing
                 </div>*/}
-
             </div>
 
             <div class="w-full max-w-[1600px] mx-auto px-4! md:px-0 py-16 md:py-24 flex flex-col gap-16">
