@@ -3,7 +3,7 @@ import { A } from "@solidjs/router";
 export function FrameworkSection() {
   return (
     <div class="py-8 md:py-12 mb-0 md:mb-24 w-full">
-      <div class="relative w-full no-line-height font-medium text-tertiary lg:!text-[110px] md:!text-[90px] !text-[68px] ">
+      <div class="relative w-full no-line-height font-medium text-tertiary  md:text-[90px]! text-[68px]! ">
         <span class="text-primary" >We Work Globaly –– </span>
         <span>with market’s favorites tools and frameworks</span>
         <span role="img" data-nosnippet class="-space-x-4 hover:space-x-2 inline-block transition-all duration-500">&nbsp
