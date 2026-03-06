@@ -1,5 +1,5 @@
 import { Link, Meta, MetaProvider, Title } from "@solidjs/meta";
-import { useParams } from "@solidjs/router";
+import { useNavigate, useParams } from "@solidjs/router";
 import { createEffect, createMemo, createSignal, For } from "solid-js";
 import { CompanyLogos } from "~/components/CompanyLogos";
 import { PageHeader } from "~/components/PageHeader";
@@ -11,12 +11,18 @@ export default function TeamMember() {
     const parentStyle = "flex flex-col w-full max-w-[3000px] justify-center mt-32 mx-auto";
     const imageStyle = "max-h-[500px] rounded-2xl border border-tertiary";
 
-    const params = useParams()
+    const params = useParams();
+    const navigate = useNavigate();
+    //createEffect
     const [person, setPerson] = createSignal<Person>(Alison);
     const [service, setService] = createSignal("Mobile Apps");
     const [list, setList] = createSignal<string[]>();
 
-    createEffect(() => setPerson((params.name === "Alison") ? Alison : Leonardo));
+    createEffect(() => {
+        if (params.name !== "alison") navigate("/alison")
+        setPerson(Alison)
+    });
+    
 
     const servicePills = ["Mobile Apps", "Web Apps", "Landing Pages", "Graphics"];
 
@@ -37,8 +43,8 @@ export default function TeamMember() {
             <div class="flex w-fit text-[20px] md:text-[24px] py-3 px-6 md:py-4 md:px-8 rounded-xl cursor-pointer transition-all duration-300 text-nowrap justify-center"
                 onClick={() => setService(props.pill)}
                 classList={{
-                    "bg-[#256AF4] text-white": service() === props.pill,
-                    "bg-transparent text-white/60 hover:bg-white/10": service() !== props.pill
+                    "bg-[#256AF4] text-white": service() === props.pill, // active
+                    "bg-transparent text-primary/60 hover:bg-white/10": service() !== props.pill // inactive
                 }}>
                 {props.pill} /
             </div>

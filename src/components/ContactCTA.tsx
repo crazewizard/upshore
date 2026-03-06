@@ -13,7 +13,7 @@ export function ContactCTA() {
 
                 <div class="flex p-2 rounded-[20px] bg-black/80 border backdrop-blur-md border-white/20 hover:bg-black/95 transition-bg duration-500">
                     <div class="w-full h-[48px] place-content-around opacity-60 group-hover:opacity-100 transition-opacity duration-500 ease-linear">
-                        <h4 class="text-[20px] !text-white text-center cursor-pointer">Let’s work together!</h4>
+                        <h4 class="text-[20px] text-white! text-center cursor-pointer">Let’s work together!</h4>
                     </div>
                     <UpshoreButton icon="Mail-icon" style={buttonStyle} action={()=>setShowForm(!showForm())} />
                 </div>
